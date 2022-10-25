@@ -1,0 +1,92 @@
+### Create tickets
+POST http://{{host}}:{{port}}/tickets
+Content-Type: application/json
+
+{
+  "title": "Document feature 'mapping'",
+  "description": "Create documentation for new 'mapping' feature.",
+  "status": "NEW",
+  "priority": "LOW"
+}
+###
+### Create tickets no description
+POST http://{{host}}:{{port}}/tickets
+Content-Type: application/json
+
+{
+  "title": "Document feature 'mapping'",
+  "status": "NEW",
+  "priority": "LOW"
+}
+###
+### Create tickets
+POST http://{{host}}:{{port}}/tickets
+Content-Type: application/json
+
+{
+  "title": "Fix duplicate 'ticket' creation bug.",
+  "description": "Fix duplicate 'ticket' creation bug.",
+  "status": "IN_PROGRESS",
+  "priority": "MEDIUM"
+}
+###
+### Create tickets
+POST http://{{host}}:{{port}}/tickets
+Content-Type: application/json
+
+{
+  "title": "Add missing test users.",
+  "description": "Add users 'john' and 'martin'",
+  "status": "DONE",
+  "priority": "HIGH"
+}
+###
+### Create tickets
+POST http://{{host}}:{{port}}/tickets
+Content-Type: application/json
+
+{
+  "title": "Implement user management.",
+  "description": "Implement user management.",
+  "status": "IN_PROGRESS",
+  "priority": "HIGH"
+}
+###
+### Create tickets
+POST http://{{host}}:{{port}}/tickets
+Content-Type: application/json
+
+{
+  "title": "Document feature 'process'",
+  "description": "Create documentation for new 'process' feature.",
+  "status": "NEW",
+  "priority": "MEDIUM"
+}
+###
+
+### Get all tickets
+GET http://{{host}}:{{port}}/tickets
+
+###
+
+### Get Tickets w/ pagination
+GET http://{{host}}:{{port}}/tickets?page=1
+
+###
+
+### Get Specific ticket
+GET http://{{host}}:{{port}}/tickets/4
+
+###
+
+### Update Specific ticket
+PUT http://{{host}}:{{port}}/tickets/2
+Content-Type: application/json
+
+{
+  "title": "Implement user management.",
+  "description": "Implement user management.",
+  "status": "IN_PROGRESS",
+  "priority": "MEDIUM"
+}
+###

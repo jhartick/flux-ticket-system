@@ -1,0 +1,13 @@
+package de.flux.ticketsystem;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class FluxTicketSystemApplication {
+
+  public static void main(String[] args) {
+    SpringApplication app = new SpringApplication(FluxTicketSystemApplication.class);
+    app.run(args);
+  }
+}
